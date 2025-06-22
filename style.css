@@ -1,0 +1,93 @@
+/* Global site styling */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: #f3f6f9;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Header styles */
+  header {
+    background-color: #0a3d62;
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  /* Footer styles */
+  footer {
+    background: #0a3d62;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 40px;
+  }
+  
+  /* Main content container */
+  main {
+    padding: 20px;
+    max-width: 1100px;
+    margin: auto;
+  }
+  
+  /* Hide UI section */
+  .hidden {
+    display: none;
+  }
+  
+  /* Authentication box styles */
+  .authBox {
+    margin-bottom: 15px;
+  }
+  
+  /* Inputs, buttons, selects */
+  input, button, select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 8px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+  
+  /* Buttons */
+  button {
+    background-color: #2980b9;
+    color: white;
+    font-weight: bold;
+    border: none;
+  }
+  
+  button:hover {
+    background-color: #145a86;
+  }
+  
+  /* Logout button color */
+  #logoutBtn {
+    background-color: #c0392b;
+    margin-bottom: 20px;
+  }
+  
+  /* Two-column grid layout */
+  .grid-two {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    margin-bottom: 30px;
+  }
+  
+  /* Individual block card for blockchain entries */
+  .blockCard {
+    background: white;
+    padding: 15px;
+    border-left: 5px solid #3498db;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.05);
+  }
+  
+  /* QR display */
+  #qrSection canvas {
+    margin-top: 10px;
+    display: block;
+  }  
