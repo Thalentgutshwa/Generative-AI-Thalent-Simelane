@@ -111,8 +111,8 @@ Every step is recorded in the blockchain ledger and shown live in the browser.
 
 ## Deployment
 
-- 🔗 **Live App**: [Hosted on Firebase](https://your-firebase-link.web.app)
+- 🔗 **Live App**: [Hosted on Firebase] https://studio.firebase.google.com/generative-ai-ts-38382556
 - 🛠️ **Development Workspace**: Firebase Studio
-- 📁 **Source Code**: [View on GitHub](https://github.com/your-repo-link)
+- 📁 **Source Code**: [View on GitHub] https://thalentgutshwa.github.io/Generative-AI-Thalent-Simelane/
 
 
