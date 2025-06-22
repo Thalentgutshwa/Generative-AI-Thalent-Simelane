@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>MetaForge Steelworks | Blockchain Traceability</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Link external CSS for styling -->
+  <link rel="stylesheet" href="style.css">
+  <!-- Load QR Code library -->
+  <script src="https://cdn.jsdelivr.net/npm/qrcode@1.5.1/build/qrcode.min.js"></script>
+</head>
+<body>
+
+  <!-- Header section for branding -->
+  <header>
+    <h1>MetaForge Steelworks</h1>
+    <p>Secure Blockchain Tracking for Metal Supply Chains</p>
+  </header>
+
+  <!-- Main content area -->
+  <main id="main-content">
+
+    <!-- Section for login and registration -->
+    <section id="authSection">
+      <h2>User Access</h2>
+
+      <!-- Registration form -->
+      <div class="authBox">
+        <input id="regName" placeholder="Register Username">
+        <input id="regPass" type="password" placeholder="Register Password">
+        <button onclick="register()">Create Account</button>
+      </div>
+
+      <!-- Login form -->
+      <div class="authBox">
+        <input id="logName" placeholder="Login Username">
+        <input id="logPass" type="password" placeholder="Login Password">
+        <button onclick="login()">Access System</button>
+      </div>
+    </section>
+
+    <!-- Section shown after login -->
+    <section id="appSection" class="hidden">
+
+      <!-- Logout button -->
+      <button id="logoutBtn" onclick="logout()">Logout</button>
+
+      <!-- Form to register products and transfer ownership -->
+      <div class="grid-two">
+        <!-- Product registration -->
+        <div>
+          <h3>Add Manufactured Product</h3>
+          <input id="metalName" placeholder="Component Name">
+          <input id="metalDesc" placeholder="Component Description">
+          <input id="originNode" placeholder="Factory/Warehouse">
+          <button onclick="addProduct()">Register Component</button>
+        </div>
+
+        <!-- Ownership transfer -->
+        <div>
+          <h3>Transfer Ownership</h3>
+          <select id="metalSelect"></select>
+          <input id="receiver" placeholder="Next Handler (Logistics, OEM)">
+          <button onclick="transfer()">Initiate Transfer</button>
+        </div>
+      </div>
+
+      <!-- Ledger and analytics view -->
+      <div class="grid-two">
+        <!-- Blockchain ledger viewer -->
+        <div>
+          <h3>Blockchain Ledger</h3>
+          <div id="ledgerView"></div>
+        </div>
+
+        <!-- Analytics and export -->
+        <div>
+          <h3>Analytics & Tools</h3>
+          <div id="statsPanel"></div>
+          <div id="qrSection"></div>
+          <button onclick="downloadCSV()">Export to CSV</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer for copyright -->
+  <footer>
+    <p>© 2025 MetaForge Steelworks. Powered by Generative AI & Blockchain | Designed by Thalent Simelane</p>
+  </footer>
+
+  <!-- JavaScript logic file -->
+  <script src="main.js"></script>
+</body>
+</html>
